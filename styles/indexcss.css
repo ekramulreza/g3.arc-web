@@ -8,17 +8,15 @@
   font-family: "Work Sans", sans-serif;
 }
 
-.btn-primary{
-    border-radius: 8px;
-    border: none;
-    color: #FFF;
-    font-size: 1.25rem;
-    background: #ff900e;
-    padding: 20px 25px;
-    cursor: pointer;
+.btn-primary {
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  background: #ff900e;
+  padding: 20px 25px;
+  cursor: pointer;
 }
-
-
 
 /* header related style */
 header {
@@ -53,49 +51,92 @@ nav li a {
 }
 
 /* banner related style */
-.banner-content{
-    max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
 }
-.banner-title
-{
-    font-size: 4rem;
-    font-weight: 700;
-    color: #131313;
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #131313;
 }
-.banner-description{
-    color: #131313;
+.banner-description {
+  color: #131313;
 }
-.banner img{
-    margin-top: 20px;
+.banner img {
+  margin-top: 20px;
 
-    width: 100%;
+  width: 100%;
 }
+
+/* main styles */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* teams style */
+.teams-container{
+  display: flex;
+  align-items: center;
+}
+ .teams-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+ }
+.teams-content{
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.teams-title{
+  font-size: 2.8rem;
+}
+
+.teams-title .ql{
+  color: #727272;
+  font-weight: 500;
+}
+
+.teams-title .t-feat{
+  color: #ff900e;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
 /*responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 576px) {
-    header{
-        padding:20px;
-    }
-    nav{
-        flex-direction: column;
-    }
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
 
 /* tablet devices */
 @media screen and (min-width: 577px) and (max-width: 960px) {
-    header{
-        padding: 30px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    nav li{
-        margin-right: 15px;
-        margin-bottom: 10px;
-    }
-    nav li a{
-        font-size: 1.2rem;
-    }
+  header {
+    padding: 30px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  nav li a {
+    font-size: 1.2rem;
+  }
 }
